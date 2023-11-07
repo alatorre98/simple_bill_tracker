@@ -86,3 +86,73 @@
 #bill-input{
     display: none;
 }
+
+@media only screen and (max-width: 600px) {
+    #bill-input{
+        flex-direction: column;
+        width: 250px;
+        height: 180px;
+        padding-bottom: 20px;
+        align-items: center;
+    }
+
+    #bill-input button.mobile-enter{
+        align-self: flex-start;
+        margin-left: 40px;
+        margin-top: 10px;
+    }
+}
+
+#bill-container{
+    background: #3282B8;
+    border-radius: 15px;
+}
+
+#bill-container li{
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    position: relative;
+    cursor: pointer;
+    color: #fff;
+}
+
+#bill-container li::before{
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(./images/unchecked.png);
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 8px;
+}
+
+#bill-container li.checked{
+    color: #BBE1FA;
+    text-decoration: line-through;
+}
+
+#bill-container li.checked::before{
+    background-image: url(./images/checked.png);
+}
+
+#bill-container li span{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #fff;
+    line-height: 40px;
+    text-align: center;
+}
+
+#bill-container li span:hover{
+    background: #edeef0;
+    border-radius: 50%;
+}
