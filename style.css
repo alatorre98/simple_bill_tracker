@@ -14,6 +14,75 @@
     padding: 10px;
 }
 
+.bill-tracker-app{
+    width: 100%;
+    max-width: 540px;
+    background: #BBE1FA;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 15px;
+}
+
+.bill-tracker-app h1 {
+    color: #0F4C75;
+    margin-bottom: 20px;
+}
+
 .budget-input{
-    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+
+.text-input{
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 0 10px;
+    font-size: 16px;
+}
+
+.enter{
+    border: none;
+    outline: none;
+    padding: 10px 30px;
+    background-color: #3282B8;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px;
+    transition: background-color .2s;
+}
+
+.enter:hover{
+    background-color: #3282B890;
+}
+
+.enter:active{
+    background-color: #3282B8;
+}
+
+.money-text{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    column-gap: 20px;
+    margin-bottom: 20px;
+}
+
+.bill-tracker-app h2 {
+    color: #0F4C75;
+}
+
+.money-color{
+    color: #20b03d;
+}
+
+#bill-input{
+    display: none;
 }

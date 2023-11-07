@@ -4,17 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
+    <script src="./main.js" defer></script>
     <title>Simple Bill Tracker</title>
 </head>
 <body>
     <div class="container">
         <div class="bill-tracker-app">
             <h1>Bill Tracker &#128184;</h1>
-            <div class="budget-input">
-
+            <div class="budget-input" id="budget-input-container">
+                <input type="number" id="budget-box" placeholder="Enter Monthly Budget" class="text-input">
+                <button id="budget-button" class="enter">Enter</button>
             </div>
-        
-            
+            <div class="money-text">
+                <h2 id="budget-output">Starting: <span class="money-color" id="budget-number">$0</span></h2>
+                <h2 id="budget-leftover">Leftover: <span class="money-color" id="leftover-money">$0</span></h2>
+                <button id="reset-button" class="enter">Reset</button>
+            </div>
+            <div class="budget-input" id="bill-input">
+                <input type="text" id="bill-name" placeholder="Enter Bill Name" class="text-input">
+                <input type="number" id="bill-amount" placeholder="Enter Bill Amount" class="text-input">
+                <button id="bill-button" class="enter">Enter</button>
+            </div>
         </div>
     </div>
 </body>
